@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DUIT Digital | Solana Web3 Token</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+
+<style>
+
+/* CSS Part 1 */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#09090f;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(10,10,20,.85);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo h2{
+font-size:22px;
+color:#FFD700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.connect-btn{
+padding:12px 24px;
+background:#FFD700;
+color:black;
+border:none;
+border-radius:40px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.connect-btn:hover{
+transform:scale(1.05);
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+}
+
+.hero-left{
+max-width:600px;
+}
+
+.hero-left h1{
+font-size:65px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-left span{
+color:#FFD700;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.7;
+opacity:.8;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.buy-btn{
+background:#FFD700;
+color:black;
+}
+
+.chart-btn{
+border:2px solid #FFD700;
+color:#FFD700;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.hero-right img{
+width:420px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png">
+
+<h2>DUIT Digital</h2>
+
+</div>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#tokenomics">Tokenomics</a>
+
+<a href="#roadmap">Roadmap</a>
+
+<a href="#faq">FAQ</a>
+
+</nav>
+
+<button class="connect-btn" id="connectWallet">
+Connect Phantom
+</button>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+The Future of
+<span>DUIT Digital</span>
+</h1>
+
+<p>
+
+DUIT Digital is a community-driven Solana token designed for fast,
+secure and decentralized digital payments.
+
+Powered by Solana.
+Built for the future.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn buy-btn">
+Buy DUIT
+</a>
+
+<a href="#" class="btn chart-btn">
+View Token
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="logo.png">
+
+</div>
+
+</section>
