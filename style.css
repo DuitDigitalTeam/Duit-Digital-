@@ -838,3 +838,181 @@ transform:translateY(0);
 }
 
 }
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+.header .container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+nav{
+
+    text-align:center;
+
+}
+
+
+
+nav a{
+
+    display:inline-block;
+
+    margin:8px;
+
+}
+
+
+
+.hero-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content{
+
+    text-align:center;
+
+}
+
+
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+
+
+.hero p{
+
+    margin:auto;
+
+}
+
+
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-image{
+
+    margin-top:40px;
+
+}
+
+
+
+.coin{
+
+    width:200px;
+
+}
+
+
+
+.section h2{
+
+    font-size:35px;
+
+}
+
+
+
+.card{
+
+    width:90%;
+
+}
+
+
+
+.stat-card{
+
+    width:90%;
+
+}
+
+
+
+.wallet-btn{
+
+    margin-top:10px;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:500px){
+
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+
+
+.hero h3{
+
+    font-size:20px;
+
+}
+
+
+
+.badge{
+
+    font-size:13px;
+
+}
+
+
+
+.logo{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.section{
+
+    padding:70px 0;
+
+}
+
+
+}
