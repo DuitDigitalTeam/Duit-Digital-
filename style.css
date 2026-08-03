@@ -680,3 +680,161 @@ footer p{
     color:#aaa;
 
 }
+/* =====================================
+   EARN + STAKING + BUTTON EFFECT
+===================================== */
+
+
+/* ================= BUTTON HOVER ================= */
+
+
+.btn-primary,
+.btn-secondary,
+.wallet-btn{
+
+    transition:.3s;
+
+}
+
+
+
+.btn-primary:hover,
+.wallet-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(255,215,0,.6);
+
+}
+
+
+
+.btn-secondary:hover{
+
+    background:#FFD700;
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ================= EARN SECTION ================= */
+
+
+#earn .card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+#earn .card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+
+    height:100px;
+
+    background:#FFD700;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    top:-40px;
+
+    right:-40px;
+
+}
+
+
+
+
+
+/* ================= STAKING ================= */
+
+
+#staking{
+
+    background:#0B1020;
+
+}
+
+
+
+#staking .card{
+
+    text-align:center;
+
+}
+
+
+
+#staking .card h3{
+
+    font-size:28px;
+
+}
+
+
+
+
+
+/* ================= IMAGE GLOW ================= */
+
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+
+
+/* ================= SMOOTH APPEAR ================= */
+
+
+.section,
+.hero{
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
