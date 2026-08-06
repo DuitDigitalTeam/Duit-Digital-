@@ -1,0 +1,45 @@
+{
+  "name": "duit-digital-solana",
+  "version": "1.0.0",
+  "description": "DUIT Digital - A community-driven Web3 ecosystem powered by Solana",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "anchor-build": "anchor build",
+    "anchor-test": "anchor test",
+    "anchor-deploy": "anchor deploy"
+  },
+  "keywords": [
+    "solana",
+    "web3",
+    "blockchain",
+    "duit",
+    "cryptocurrency"
+  ],
+  "author": "DUIT Digital Team",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.93.0",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.31",
+    "@project-serum/anchor": "^0.29.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.0",
+    "jest": "^29.7.0",
+    "@testing-library/react": "^14.0.0"
+  }
+}
