@@ -199,10 +199,9 @@ nav a:hover{
 /* SECTION */
 
 
-section{
-
-    padding:70px 8%;
-
+section {
+padding: 80px 20px;
+}
     text-align:center;
 
 }
