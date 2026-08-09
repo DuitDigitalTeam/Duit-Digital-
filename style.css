@@ -517,6 +517,36 @@ margin-top:20px;
 
 }
 
+.partners img{
+
+width:60px;
+
+height:60px;
+
+object-fit:contain;
+
+margin-bottom:15px;
+
+filter:
+drop-shadow(0 0 15px #00eaff);
+
+}
+
+
+
+.partners{
+
+text-align:center;
+
+padding:50px 8%;
+
+}
+
+
+
+.partners .cards div{
+
+min-height:250px;
 
 }
 }
