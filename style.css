@@ -549,4 +549,56 @@ padding:50px 8%;
 min-height:250px;
 
 }
+/* Premium spacing */
+
+section{
+
+    padding-top:100px;
+    padding-bottom:100px;
+
+}
+
+
+.hero{
+
+    padding-top:120px;
+    padding-bottom:120px;
+
+}
+
+
+section h2{
+
+    margin-bottom:40px;
+
+}
+
+
+section p{
+
+    margin-bottom:25px;
+
+}
+
+
+.cards{
+
+    margin-top:40px;
+
+}
+
+
+.cards div{
+
+    padding:40px 30px;
+
+}
+
+
+.flow p{
+
+    margin:30px;
+
+    padding:25px;
+
 }
