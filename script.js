@@ -1,26 +1,30 @@
+document.addEventListener("DOMContentLoaded", function(){
 
-// =====================================
-// DUIT DIGITAL V3
-// MAIN JAVASCRIPT
-// =====================================
+    console.log("DUIT Digital Website Loaded");
+
+});
 
 
-// Smooth scrolling untuk menu
+// Smooth scroll
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+const links = document.querySelectorAll("a[href^='#']");
+
+links.forEach(link => {
 
     link.addEventListener("click", function(e){
 
-        const target = document.querySelector(this.getAttribute("href"));
+        const target =
+        document.querySelector(
+        this.getAttribute("href")
+        );
+
 
         if(target){
 
             e.preventDefault();
 
             target.scrollIntoView({
-
                 behavior:"smooth"
-
             });
 
         }
@@ -30,28 +34,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
+// DUIT AI placeholder
 
-// Wallet button demo
+function openDuitAI(){
 
-const walletButton = document.querySelector(".wallet-btn");
-
-
-if(walletButton){
-
-    walletButton.addEventListener("click", function(){
-
-        alert(
-            "Phantom Wallet Integration Coming Soon 🚀"
-        );
-
-    });
+    alert(
+    "DUIT AI Assistant is coming soon."
+    );
 
 }
-
-
-
-// Hero animation message
-
-console.log(
-    "DUIT Digital V3 Loaded Successfully 🚀"
-);
