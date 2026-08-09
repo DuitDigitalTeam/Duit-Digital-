@@ -198,14 +198,13 @@ nav a:hover{
 
 /* SECTION */
 
-
 section {
-padding: 80px 20px;
-}
+
+    padding: 70px 20px;
+
     text-align:center;
 
 }
-
 
 
 section h2{
@@ -214,19 +213,16 @@ section h2{
 
     font-size:36px;
 
-    margin-bottom:25px;
+    margin-bottom:30px;
 
 }
-
 
 
 section p{
 
-    color:#cbd5e1;
+    margin-bottom:20px;
 
 }
-
-
 
 
 
