@@ -451,6 +451,72 @@ section h2{
 
 }
 
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+margin:10px;
+
+border-radius:30px;
+
+background:linear-gradient(
+90deg,
+#00eaff,
+#2563eb
+);
+
+color:white !important;
+
+text-decoration:none;
+
+font-size:18px;
+
+box-shadow:
+0 0 20px rgba(0,234,255,.5);
+
+transition:.3s;
+
+}
 
 
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 35px rgba(0,234,255,.8);
+
+}
+
+
+
+@media(max-width:700px){
+
+
+header{
+
+padding:15px 5%;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+
+.hero h1{
+
+margin-top:20px;
+
+}
+
+
+}
 }
