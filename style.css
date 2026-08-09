@@ -1,108 +1,53 @@
-/* =====================================
-   DUIT DIGITAL V3 PREMIUM
-   BASE + HEADER + HERO
-===================================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+    font-family:'Segoe UI',Arial,sans-serif;
 }
 
 body{
 
-    font-family:'Poppins',Arial,sans-serif;
-
-    background:#070B18;
+    background:
+    radial-gradient(circle at top,#172554,#020617 65%);
 
     color:#ffffff;
-
     line-height:1.6;
-
+    overflow-x:hidden;
 }
 
 
-/* CONTAINER */
+/* HEADER */
 
-.container{
+header{
 
-    width:90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    max-width:1200px;
+    padding:20px 8%;
 
-    margin:auto;
-
-}
-
-
-
-/* ================= HEADER ================= */
-
-
-.header{
-
-    position:sticky;
-
-    top:0;
-
-    z-index:999;
-
-    background:rgba(7,11,24,0.85);
+    background:rgba(2,6,23,0.85);
 
     backdrop-filter:blur(15px);
 
-    border-bottom:1px solid rgba(255,215,0,0.3);
+    position:sticky;
+    top:0;
+    z-index:100;
+
+    border-bottom:1px solid rgba(0,234,255,.15);
 
 }
 
 
-.header .container{
+.logo img{
 
-    display:flex;
+    width:65px;
+    height:65px;
 
-    justify-content:space-between;
+    object-fit:contain;
 
-    align-items:center;
-
-    padding:20px 0;
-
-}
-
-
-
-.brand{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-
-
-.logo{
-
-    width:60px;
-
-    height:60px;
-
-    border-radius:50%;
-
-}
-
-
-
-.brand span{
-
-    color:#FFD700;
-
-    font-size:13px;
+    filter:
+    drop-shadow(0 0 15px #00eaff);
 
 }
 
@@ -110,48 +55,25 @@ body{
 
 nav a{
 
-    color:white;
+    color:#cbd5e1;
 
     text-decoration:none;
 
-    margin:0 10px;
+    margin-left:20px;
 
     transition:.3s;
 
 }
 
 
-
 nav a:hover{
 
-    color:#FFD700;
+    color:#00eaff;
 
 }
 
 
-
-.wallet-btn{
-
-    padding:12px 22px;
-
-    background:#FFD700;
-
-    color:#000;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-}
-
-
-
-
-
-/* ================= HERO ================= */
-
+/* HERO */
 
 .hero{
 
@@ -159,39 +81,141 @@ nav a:hover{
 
     display:flex;
 
+    flex-direction:column;
+
+    justify-content:center;
+
     align-items:center;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+
+    background:
+
+    linear-gradient(
+    rgba(2,6,23,.75),
+    rgba(2,6,23,.95)
+    ),
+
+    url("hero-bg.png");
+
+
+    background-size:cover;
+
+    background-position:center;
 
 }
 
 
 
-.hero-grid{
+.hero h1{
 
-    display:grid;
+    font-size:55px;
 
-    grid-template-columns:1fr 1fr;
+    font-weight:800;
 
-    gap:60px;
+    background:
+    linear-gradient(
+    90deg,
+    #00eaff,
+    #8b5cf6
+    );
 
-    align-items:center;
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+.hero h2{
+
+    color:#00eaff;
+
+    font-size:28px;
+
+    margin:20px 0;
 
 }
 
 
 
-.badge{
+.hero p{
+
+    max-width:750px;
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+}
+
+
+
+/* BUTTON */
+
+.buttons{
+
+    margin-top:30px;
+
+}
+
+
+.buttons a{
 
     display:inline-block;
 
-    background:#121A32;
+    padding:14px 30px;
 
-    border:1px solid rgba(255,215,0,.3);
-
-    padding:10px 20px;
+    margin:10px;
 
     border-radius:30px;
 
-    color:#FFD700;
+    text-decoration:none;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #0284c7,
+    #06b6d4
+    );
+
+    box-shadow:
+    0 0 20px rgba(0,234,255,.4);
+
+    transition:.3s;
+
+}
+
+
+.buttons a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* SECTIONS */
+
+section{
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+section h2{
+
+    color:#00eaff;
+
+    font-size:36px;
 
     margin-bottom:25px;
 
@@ -199,150 +223,7 @@ nav a:hover{
 
 
 
-.hero h1{
-
-    font-size:65px;
-
-    line-height:1.2;
-
-}
-
-
-
-.hero h1 span{
-
-    color:#FFD700;
-
-}
-
-
-
-.hero h3{
-
-    margin:20px 0;
-
-    color:#ddd;
-
-}
-
-
-
-.hero p{
-
-    color:#b9c2d0;
-
-    max-width:600px;
-
-}
-
-
-
-.hero-buttons{
-
-    display:flex;
-
-    gap:20px;
-
-    margin-top:35px;
-
-}
-
-
-
-.btn-primary{
-
-    background:#FFD700;
-
-    color:#000;
-
-    padding:15px 35px;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
-}
-
-
-
-.btn-secondary{
-
-    border:2px solid #FFD700;
-
-    color:#FFD700;
-
-    padding:13px 35px;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-}
-
-
-
-.coin{
-
-    width:280px;
-
-    animation:float 4s ease-in-out infinite;
-
-    filter:drop-shadow(0 0 30px #FFD700);
-
-}
-
-
-
-@keyframes float{
-
-0%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-20px);
-}
-
-100%{
-transform:translateY(0);
-}
-
-/* =====================================
-   SECTIONS + CARDS
-===================================== */
-
-
-.section{
-
-    padding:100px 0;
-
-}
-
-
-
-.section h2{
-
-    text-align:center;
-
-    font-size:45px;
-
-    margin-bottom:30px;
-
-    color:#FFD700;
-
-}
-
-
-
-.section-text{
-
-    text-align:center;
-
-    max-width:800px;
-
-    margin:0 auto 50px;
+section p{
 
     color:#cbd5e1;
 
@@ -350,669 +231,199 @@ transform:translateY(0);
 
 
 
-
-/* ================= CARDS ================= */
-
+/* CARDS */
 
 .cards{
 
-    display:flex;
+    display:grid;
 
-    justify-content:center;
-
-    flex-wrap:wrap;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
 
     gap:25px;
-
-}
-
-
-
-.card{
-
-    width:300px;
-
-    background:rgba(18,26,50,0.8);
-
-    border:1px solid rgba(255,215,0,0.2);
-
-    padding:30px;
-
-    border-radius:20px;
-
-    transition:.4s;
-
-    backdrop-filter:blur(10px);
-
-}
-
-
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#FFD700;
-
-    box-shadow:0 0 25px rgba(255,215,0,.25);
-
-}
-
-
-
-.card h3{
-
-    color:#FFD700;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.card p{
-
-    color:#cbd5e1;
-
-}
-/* =====================================
-   EARN + STAKING + BUTTON EFFECT
-===================================== */
-
-
-/* ================= BUTTON HOVER ================= */
-
-
-.btn-primary,
-.btn-secondary,
-.wallet-btn{
-
-    transition:.3s;
-
-}
-
-
-
-.btn-primary:hover,
-.wallet-btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 0 25px rgba(255,215,0,.6);
-
-}
-
-
-
-.btn-secondary:hover{
-
-    background:#FFD700;
-
-    color:#000;
-
-    transform:translateY(-5px);
-
-}
-
-
-
-
-
-/* ================= EARN SECTION ================= */
-
-
-#earn .card{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-#earn .card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:100px;
-
-    height:100px;
-
-    background:#FFD700;
-
-    opacity:.08;
-
-    border-radius:50%;
-
-    top:-40px;
-
-    right:-40px;
-
-}
-
-
-
-
-
-/* ================= STAKING ================= */
-
-
-#staking{
-
-    background:#0B1020;
-
-}
-
-
-
-#staking .card{
-
-    text-align:center;
-
-}
-
-
-
-#staking .card h3{
-
-    font-size:28px;
-
-}
-
-
-
-
-
-/* ================= IMAGE GLOW ================= */
-
-
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-
-
-
-
-/* ================= SMOOTH APPEAR ================= */
-
-
-.section,
-.hero{
-
-    animation:fadeUp 1s ease;
-
-}
-
-
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-
-/* ================= STATISTICS ================= */
-
-
-.stats{
-
-    background:#0B1020;
-
-}
-
-
-
-.stat-card{
-
-    width:220px;
-
-    padding:35px;
-
-    text-align:center;
-
-    background:#121A32;
-
-    border-radius:20px;
-
-    border:1px solid rgba(255,215,0,.2);
-
-}
-
-
-
-.stat-card h3{
-
-    font-size:45px;
-
-    color:#FFD700;
-
-}
-
-
-
-.stat-card p{
-
-    color:#fff;
-
-}
-
-
-
-
-
-/* ================= COMMUNITY ================= */
-
-
-.community{
-
-    background:#080D1C;
-
-}
-
-
-
-
-/* ================= FAQ ================= */
-
-
-.faq .card{
-
-    width:100%;
-
-    max-width:800px;
-
-}
-
-
-
-/* ================= FOOTER ================= */
-
-
-footer{
-
-    background:#050812;
-
-    text-align:center;
-
-    padding:50px 0;
-
-    border-top:1px solid rgba(255,215,0,.3);
-
-}
-
-
-
-footer h3{
-
-    color:#FFD700;
-
-    margin-bottom:15px;
-
-}
-
-
-footer p{
-
-    color:#aaa;
-
-}
-/* =====================================
-   EARN + STAKING + BUTTON EFFECT
-===================================== */
-
-
-/* ================= BUTTON HOVER ================= */
-
-
-.btn-primary,
-.btn-secondary,
-.wallet-btn{
-
-    transition:.3s;
-
-}
-
-
-
-.btn-primary:hover,
-.wallet-btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 0 25px rgba(255,215,0,.6);
-
-}
-
-
-
-.btn-secondary:hover{
-
-    background:#FFD700;
-
-    color:#000;
-
-    transform:translateY(-5px);
-
-}
-
-
-
-
-
-/* ================= EARN SECTION ================= */
-
-
-#earn .card{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-#earn .card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:100px;
-
-    height:100px;
-
-    background:#FFD700;
-
-    opacity:.08;
-
-    border-radius:50%;
-
-    top:-40px;
-
-    right:-40px;
-
-}
-
-
-
-
-
-/* ================= STAKING ================= */
-
-
-#staking{
-
-    background:#0B1020;
-
-}
-
-
-
-#staking .card{
-
-    text-align:center;
-
-}
-
-
-
-#staking .card h3{
-
-    font-size:28px;
-
-}
-
-
-
-
-
-/* ================= IMAGE GLOW ================= */
-
-
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-
-
-
-
-/* ================= SMOOTH APPEAR ================= */
-
-
-.section,
-.hero{
-
-    animation:fadeUp 1s ease;
-
-}
-
-
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-/* =====================================
-   MOBILE RESPONSIVE
-===================================== */
-
-
-@media(max-width:900px){
-
-
-.header .container{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-
-
-nav{
-
-    text-align:center;
-
-}
-
-
-
-nav a{
-
-    display:inline-block;
-
-    margin:8px;
-
-}
-
-
-
-.hero-grid{
-
-    grid-template-columns:1fr;
-
-    text-align:center;
-
-}
-
-
-
-.hero-content{
-
-    text-align:center;
-
-}
-
-
-
-.hero h1{
-
-    font-size:42px;
-
-}
-
-
-
-.hero p{
-
-    margin:auto;
-
-}
-
-
-
-.hero-buttons{
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-}
-
-
-
-.hero-image{
 
     margin-top:40px;
 
 }
 
 
+.cards div{
 
-.coin{
+    padding:30px;
 
-    width:200px;
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:
+    1px solid rgba(0,234,255,.2);
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+
+}
+
+
+.cards div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00eaff;
+
+}
+
+
+/* FLOW */
+
+.flow{
+
+    max-width:400px;
+
+    margin:auto;
+
+}
+
+
+.flow p{
+
+    padding:15px;
+
+    margin:15px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+/* AI BOX */
+
+.ai-box{
+
+    max-width:500px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    color:#00eaff;
+
+    background:
+    linear-gradient(
+    135deg,
+    #111827,
+    #1e293b
+    );
+
+    border:1px solid #00eaff;
+
+    box-shadow:
+    0 0 25px rgba(0,234,255,.25);
+
+}
+
+
+/* LIST */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+li{
+
+    margin:12px;
+
+    color:#dbeafe;
 
 }
 
 
 
-.section h2{
+/* ROADMAP */
 
-    font-size:35px;
+.roadmap{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+.roadmap p{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+/* FOOTER */
+
+footer{
+
+    padding:50px;
+
+    text-align:center;
+
+    background:#020617;
+
+    border-top:
+    1px solid rgba(0,234,255,.15);
 
 }
 
 
 
-.card{
+/* MOBILE */
 
-    width:90%;
+@media(max-width:700px){
 
-}
+header{
 
-
-
-.stat-card{
-
-    width:90%;
+    flex-direction:column;
 
 }
 
 
+nav{
 
-.wallet-btn{
-
-    margin-top:10px;
-
-}
-
+    margin-top:15px;
 
 }
-
-
-
-
-
-@media(max-width:500px){
 
 
 .hero h1{
 
-    font-size:34px;
+    font-size:38px;
 
 }
 
 
+.hero h2{
 
-.hero h3{
-
-    font-size:20px;
-
-}
-
-
-
-.badge{
-
-    font-size:13px;
+    font-size:22px;
 
 }
-
-
-
-.logo{
-
-    width:50px;
-
-    height:50px;
-
-}
-
-
-
-.section{
-
-    padding:70px 0;
-
-}
-
 
 }
