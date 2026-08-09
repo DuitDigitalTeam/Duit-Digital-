@@ -5,15 +5,18 @@
     font-family:'Segoe UI',Arial,sans-serif;
 }
 
+
 body{
 
     background:
-    radial-gradient(circle at top,#172554,#020617 65%);
+    radial-gradient(circle at top,#172554,#020617 70%);
 
-    color:#ffffff;
+    color:white;
     line-height:1.6;
     overflow-x:hidden;
+
 }
+
 
 /* HEADER */
 
@@ -25,23 +28,25 @@ header{
 
     padding:20px 8%;
 
-    background:rgba(2,6,23,0.85);
+    background:rgba(2,6,23,.85);
 
     backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(0,234,255,.2);
 
     position:sticky;
     top:0;
     z-index:100;
 
-    border-bottom:1px solid rgba(0,234,255,.15);
-
 }
+
 
 
 .logo img{
 
-    width:65px;
-    height:65px;
+    width:75px;
+
+    height:75px;
 
     object-fit:contain;
 
@@ -52,34 +57,29 @@ header{
 
 
 
-nav a{
-
-    color:#cbd5e1;
-
-    text-decoration:none;
-
-    margin-left:20px;
-
-    transition:.3s;
-
-}
-@media(max-width:700px){
+/* MENU */
 
 nav{
 
-display:none;
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
 
 }
 
 
-nav.active{
 
-display:flex;
+nav a{
 
-flex-direction:column;
+    color:#dbeafe;
 
-}
+    text-decoration:none;
 
+    font-size:18px;
+
+    transition:.3s;
 
 }
 
@@ -91,11 +91,28 @@ nav a:hover{
 }
 
 
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:35px;
+
+    color:#00eaff;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
 /* HERO */
 
 .hero{
 
-    min-height:90vh;
+    min-height:85vh;
 
     display:flex;
 
@@ -107,14 +124,14 @@ nav a:hover{
 
     text-align:center;
 
-    padding:50px 10%;
+    padding:60px 10%;
 
 
     background:
 
     linear-gradient(
-    rgba(2,6,23,.75),
-    rgba(2,6,23,.95)
+    rgba(2,6,23,.7),
+    rgba(2,6,23,.9)
     ),
 
     url("hero-bg.png");
@@ -128,11 +145,13 @@ nav a:hover{
 
 
 
+
 .hero h1{
 
     font-size:55px;
 
     font-weight:800;
+
 
     background:
     linear-gradient(
@@ -141,6 +160,7 @@ nav a:hover{
     #8b5cf6
     );
 
+
     -webkit-background-clip:text;
 
     color:transparent;
@@ -148,13 +168,14 @@ nav a:hover{
 }
 
 
+
 .hero h2{
 
     color:#00eaff;
 
-    font-size:28px;
+    font-size:30px;
 
-    margin:20px 0;
+    margin:20px;
 
 }
 
@@ -162,63 +183,20 @@ nav a:hover{
 
 .hero p{
 
-    max-width:750px;
+    max-width:800px;
+
+    font-size:20px;
 
     color:#cbd5e1;
 
-    font-size:18px;
-
 }
 
 
 
-/* BUTTON */
-
-.buttons{
-
-    margin-top:30px;
-
-}
 
 
-.buttons a{
+/* SECTION */
 
-    display:inline-block;
-
-    padding:14px 30px;
-
-    margin:10px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    color:white;
-
-    background:
-
-    linear-gradient(
-    90deg,
-    #0284c7,
-    #06b6d4
-    );
-
-    box-shadow:
-    0 0 20px rgba(0,234,255,.4);
-
-    transition:.3s;
-
-}
-
-
-.buttons a:hover{
-
-    transform:translateY(-5px);
-
-}
-
-
-/* SECTIONS */
 
 section{
 
@@ -227,6 +205,7 @@ section{
     text-align:center;
 
 }
+
 
 
 section h2{
@@ -249,20 +228,21 @@ section p{
 
 
 
-/* CARDS */
+
+
+/* CARD */
 
 .cards{
 
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+    repeat(auto-fit,minmax(230px,1fr));
 
     gap:25px;
 
-    margin-top:40px;
-
 }
+
 
 
 .cards div{
@@ -272,150 +252,102 @@ section p{
     border-radius:20px;
 
     background:
+
     rgba(255,255,255,.05);
 
+
     border:
+
     1px solid rgba(0,234,255,.2);
+
 
     backdrop-filter:blur(15px);
 
-    transition:.3s;
 
 }
 
 
-.cards div:hover{
 
-    transform:translateY(-8px);
+
+.cards div:hover{
 
     border-color:#00eaff;
 
 }
 
 
+
+
+
 /* FLOW */
 
 .flow{
 
-    max-width:400px;
+    max-width:450px;
 
     margin:auto;
 
 }
 
 
+
 .flow p{
 
-    padding:15px;
+    padding:20px;
 
     margin:15px;
 
     background:
+
     rgba(255,255,255,.05);
 
-    border-radius:15px;
 
-    border:1px solid rgba(255,255,255,.1);
+    border-radius:15px;
 
 }
 
 
-/* AI BOX */
+
+
 
 .ai-box{
 
-    max-width:500px;
+    max-width:600px;
 
-    margin:30px auto;
+    margin:auto;
 
     padding:30px;
 
     border-radius:20px;
 
-    color:#00eaff;
-
-    background:
-    linear-gradient(
-    135deg,
-    #111827,
-    #1e293b
-    );
-
     border:1px solid #00eaff;
 
-    box-shadow:
-    0 0 25px rgba(0,234,255,.25);
-
-}
-
-
-/* LIST */
-
-ul{
-
-    list-style:none;
-
-}
-
-
-li{
-
-    margin:12px;
-
-    color:#dbeafe;
-
 }
 
 
 
-/* ROADMAP */
 
-.roadmap{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-
-}
-
-
-.roadmap p{
-
-    padding:25px;
-
-    border-radius:20px;
-
-    background:
-    rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.1);
-
-}
-
-
-/* FOOTER */
 
 footer{
 
-    padding:50px;
+    padding:40px;
 
     text-align:center;
 
     background:#020617;
 
-    border-top:
-    1px solid rgba(0,234,255,.15);
+    border-top:1px solid rgba(0,234,255,.2);
 
 }
+
+
 
 
 
 /* MOBILE */
 
 @media(max-width:700px){
+
 
 header{
 
@@ -424,11 +356,68 @@ header{
 }
 
 
-nav{
+.logo img{
 
-    margin-top:15px;
+    width:65px;
+
+    height:65px;
 
 }
+
+
+
+.menu-toggle{
+
+    display:block;
+
+    margin-top:10px;
+
+}
+
+
+
+
+#nav-menu{
+
+    display:none;
+
+    flex-direction:column;
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+
+
+
+#nav-menu.active{
+
+    display:flex;
+
+}
+
+
+
+nav a{
+
+    margin:10px;
+
+    font-size:20px;
+
+}
+
+
+
+.hero{
+
+    min-height:70vh;
+
+    padding:40px 8%;
+
+}
+
 
 
 .hero h1{
@@ -438,70 +427,29 @@ nav{
 }
 
 
+
 .hero h2{
 
-    font-size:22px;
-
-}
-
-}
-.menu-toggle{
-
-display:none;
-
-font-size:35px;
-
-cursor:pointer;
-
-color:#00eaff;
+    font-size:24px;
 
 }
 
 
-@media(max-width:700px){
 
+.hero p{
 
-.menu-toggle{
-
-display:block;
+    font-size:17px;
 
 }
 
 
-nav{
 
-display:none;
+section h2{
 
-flex-direction:column;
-
-width:100%;
-
-text-align:center;
-
-margin-top:20px;
+    font-size:30px;
 
 }
 
-
-nav.active{
-
-display:flex;
-
-}
-
-
-nav a{
-
-margin:15px;
-
-}
-
-
-header{
-
-align-items:center;
-
-}
 
 
 }
