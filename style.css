@@ -819,6 +819,31 @@ drop-shadow(0 0 5px gold);
 
 }
 
+section{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s ease;
+
+}
+
+
+
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+a:hover{
+
+color:#ffd700;
+
+text-shadow:
+0 0 15px gold;
 
 }
 
