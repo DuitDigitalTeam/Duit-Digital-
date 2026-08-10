@@ -519,4 +519,153 @@ padding:0;
 
 }
 
+/* =========================
+DUIT DIGITAL V2
+PHASE 1 ANIMATION
+========================= */
+
+
+/* Hero entrance */
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero button {
+
+animation: fadeUp 1.2s ease forwards;
+
+}
+
+
+@keyframes fadeUp {
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Gold glowing text */
+
+.hero h1,
+.hero h2,
+h2{
+
+text-shadow:
+0 0 10px #d4af37,
+0 0 25px #d4af37,
+0 0 50px rgba(212,175,55,0.6);
+
+}
+
+
+
+/* Button premium effect */
+
+
+button,
+.btn{
+
+transition:0.4s;
+
+box-shadow:
+0 0 20px rgba(212,175,55,0.5);
+
+}
+
+
+button:hover,
+.btn:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+0 0 35px #d4af37;
+
+}
+
+
+
+/* Card animation */
+
+
+.card{
+
+transition:0.5s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-12px);
+
+border-color:#d4af37;
+
+box-shadow:
+0 0 30px rgba(212,175,55,0.5);
+
+}
+
+
+
+/* Floating image */
+
+
+.float{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floating{
+
+
+0%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* Smooth scroll */
+
+html{
+
+scroll-behavior:smooth;
+
+}
 }
