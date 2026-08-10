@@ -675,4 +675,151 @@ opacity:0;
 transform:translateY(50px);
 
 }
+/* =========================
+PHASE 2 FUTURISTIC EFFECT
+========================= */
+
+
+body{
+
+overflow-x:hidden;
+
+}
+
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background-image:
+
+radial-gradient(
+circle,
+rgba(212,175,55,0.25) 1px,
+transparent 1px
+);
+
+background-size:50px 50px;
+
+animation:particles 20s linear infinite;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+
+
+@keyframes particles{
+
+from{
+
+background-position:0 0;
+
+}
+
+to{
+
+background-position:500px 500px;
+
+}
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:#d4af37;
+
+filter:blur(120px);
+
+opacity:0.25;
+
+top:20%;
+
+left:50%;
+
+animation:lightMove 6s infinite alternate;
+
+}
+
+
+
+@keyframes lightMove{
+
+
+from{
+
+transform:translateX(-100px);
+
+}
+
+
+to{
+
+transform:translateX(100px);
+
+}
+.logo{
+
+animation:
+logoPulse 3s infinite;
+
+}
+
+
+
+@keyframes logoPulse{
+
+
+0%{
+
+filter:
+drop-shadow(0 0 5px gold);
+
+}
+
+
+50%{
+
+filter:
+drop-shadow(0 0 35px gold);
+
+}
+
+
+100%{
+
+filter:
+drop-shadow(0 0 5px gold);
+
+}
+
+
+}
+
 }
