@@ -1,146 +1,252 @@
-/* =========================
-   DUIT DIGITAL V3 SPACING
-   ========================= */
+/* DUIT DIGITAL GOLD THEME */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-section {
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Arial, sans-serif;
+}
 
-    padding-top: 50px !important;
+header{
+    text-align:center;
+    padding:20px;
+}
 
-    padding-bottom: 50px !important;
+.logo img{
+    width:140px;
+    filter:drop-shadow(0 0 25px gold);
+}
 
-    text-align: center;
+nav{
+    margin-top:20px;
+}
 
+nav a{
+    color:#d4af37;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
 }
 
 
-
-.hero {
-
-    padding-top: 80px !important;
-
-    padding-bottom: 80px !important;
-
+section{
+    padding:50px 20px;
+    text-align:center;
 }
 
 
-
-section h2 {
-
-    color: #00eaff;
-
-    font-size: 36px;
-
-    margin-bottom: 25px;
-
+h1,h2,h3{
+    color:#ffd700;
+    text-shadow:
+    0 0 5px #ffd700,
+    0 0 15px #ffae00;
 }
 
 
-
-section p {
-
-    margin-bottom: 20px;
-
-    line-height: 1.8;
-
+.hero{
+    padding:60px 20px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.9)
+    );
 }
 
 
-
-.cards {
-
-    margin-top: 20px !important;
-
-    gap: 20px !important;
-
+.hero h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
 }
 
 
-
-.cards div {
-
-    padding: 30px 25px !important;
-
+.card{
+    background:#111111;
+    border:1px solid #8a6a1f;
+    border-radius:20px;
+    padding:30px 25px;
+    box-shadow:
+    0 0 20px rgba(255,215,0,0.15);
 }
 
 
-
-.flow p {
-
-    margin: 20px !important;
-
-    padding: 20px !important;
-
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 30px rgba(255,215,0,0.35);
 }
 
 
+section p{
+    color:#dddddd;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
 
-/* Mobile adjustment */
+
+button,
+.btn{
+    display:inline-block;
+    background:
+    linear-gradient(
+    90deg,
+    #ffd700,
+    #ff9900
+    );
+
+    color:#000;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:15px;
+
+    box-shadow:
+    0 0 20px rgba(255,215,0,.5);
+}
+
+
+button:hover,
+.btn:hover{
+    box-shadow:
+    0 0 35px rgba(255,215,0,.9);
+}
+
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#aaa;
+    border-top:1px solid #333;
+}
+
+
+.gold{
+    color:#ffd700;
+}
+
+
+.highlight{
+    color:#ffd700;
+    font-weight:bold;
+}
+/* MOBILE RESPONSIVE */
 
 @media(max-width:700px){
 
+    .logo img{
+        width:110px;
+    }
 
-section {
 
-    padding-top: 40px !important;
+    nav a{
+        display:inline-block;
+        margin:8px;
+        font-size:14px;
+    }
 
-    padding-bottom: 40px !important;
+
+    .hero{
+        padding:40px 15px;
+    }
+
+
+    .hero h1{
+        font-size:32px;
+    }
+
+
+    h2{
+        font-size:30px;
+    }
+
+
+    section{
+        padding:40px 15px;
+    }
+
+
+    section p{
+        font-size:16px;
+    }
+
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+
+    .card{
+        padding:25px 15px;
+    }
+
+
+    .btn{
+        padding:12px 25px;
+        font-size:15px;
+    }
+
+}
+
+
+/* GOLD SHINE EFFECT */
+
+.gold-shine{
+
+    background:
+    linear-gradient(
+    90deg,
+    #ffd700,
+    #fff3a0,
+    #ffd700
+    );
+
+    background-size:200%;
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+    animation:shine 3s infinite;
 
 }
 
 
+@keyframes shine{
 
-.hero {
-
-    padding-top: 60px !important;
-
-    padding-bottom: 60px !important;
-
-}
+    0%{
+        background-position:0%;
+    }
 
 
-
-section h2 {
-
-    font-size: 30px;
+    100%{
+        background-position:200%;
+    }
 
 }
 
 
+/* SMOOTH ANIMATION */
 
-section p {
+.card,
+.btn{
 
-    font-size: 16px;
-
-}
-/* HERO MOBILE FIX */
-
-.hero {
-
-    min-height: auto !important;
-
-    padding-top: 40px !important;
-
-    padding-bottom: 40px !important;
+    transition:0.3s ease;
 
 }
 
 
-
-.hero h1 {
-
-    margin-top: 20px !important;
-
-    margin-bottom: 20px !important;
-
-}
-
-
-
-.hero h2 {
-
-    margin-bottom: 20px !important;
-
-}
-
+html{
+    scroll-behavior:smooth;
 }
