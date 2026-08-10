@@ -1,4 +1,4 @@
-/* =================================
+Ii/* =================================
    DUIT DIGITAL LUXURY GOLD THEME
 ================================= */
 
@@ -846,5 +846,68 @@ text-shadow:
 0 0 15px gold;
 
 }
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+height:250px;
+
+background:#d4af37;
+
+border-radius:50%;
+
+filter:blur(120px);
+
+opacity:0.35;
+
+animation:glowMove 5s infinite alternate;
+
+}
+
+
+@keyframes glowMove{
+
+from{
+transform:translateX(-100px);
+}
+
+to{
+transform:translateX(100px);
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+.card{
+
+transition:all .6s ease;
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+.card.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 0 35px rgba(212,175,55,.5);
 
 }
