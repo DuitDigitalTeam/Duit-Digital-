@@ -388,3 +388,74 @@ body{
 
 
 }
+/* FINAL OVERRIDE */
+
+.header-logo img{
+
+width:100px !important;
+
+height:100px !important;
+
+object-fit:contain !important;
+
+}
+
+
+.hero{
+
+width:100% !important;
+
+min-height:100vh !important;
+
+display:flex !important;
+
+flex-direction:column !important;
+
+align-items:center !important;
+
+justify-content:center !important;
+
+}
+
+
+.hero h1{
+
+width:100% !important;
+
+font-size:60px !important;
+
+}
+
+
+.hero h2{
+
+width:100% !important;
+
+font-size:40px !important;
+
+}
+
+
+.hero p{
+
+width:90% !important;
+
+max-width:900px !important;
+
+font-size:22px !important;
+
+}
+
+
+.hero .btn{
+
+width:auto !important;
+
+}
+
+
+img{
+
+max-width:100%;
+
+}
