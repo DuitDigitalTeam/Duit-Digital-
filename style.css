@@ -1,1113 +1,60 @@
-/* =====================================
-   DUIT DIGITAL PREMIUM WEB3 STYLE
-   BLACK + GOLD THEME
-===================================== */
+/* =========================
+   DUIT DIGITAL PREMIUM STYLE
+========================= */
 
+
+/* RESET */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-
-html{
-
-    scroll-behavior:smooth;
-
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 
 body{
 
-    background:#030303;
+font-family:Arial, Helvetica, sans-serif;
 
-    color:#ffffff;
+background:#050505;
 
-    font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+color:white;
 
-    overflow-x:hidden;
+overflow-x:hidden;
 
 }
 
 
-
-/* =================
-HEADER
-================= */
-
-
-.header-logo{
-
-width:110px;
-
-height:110px;
-
-background:transparent;
-
-overflow:hidden;
-
-border-radius:50%;
-
-}
-
-
-.header-logo img{
-
-width:110px;
-
-height:110px;
-
-object-fit:contain;
-
-border-radius:50%;
-
-background:transparent;
-
-filter:none;
-
-box-shadow:none;
-
-
-}
-
-}
-
-
-
-/* HAMBURGER */
-
-
-.menu-toggle{
-
-position:absolute;
-
-right:30px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-font-size:35px;
-
-color:#d4af37;
-
-z-index:99;
-
-}
-
-
-
-#nav-menu{
-
-    display:none;
-
-    position:absolute;
-
-    top:100%;
-
-    right:0;
-
-    width:100%;
-
-    background:#050505;
-
-    text-align:center;
-
-    padding:25px;
-
-}
-
-
-
-#nav-menu.active{
-
-    display:flex;
-
-    flex-direction:column;
-
-}
-
-
-
-#nav-menu a{
-
-    color:#d4af37;
-
-    text-decoration:none;
-
-    padding:15px;
-
-    font-size:18px;
-
-}
-
-
-
-/* =================
-HERO
-================= */
-
-
-.hero{
-
-    min-height:90vh;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:60px 20px;
-
-    position:relative;
-
-    overflow:hidden;
-
-
-    background:
-
-    linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.85)
-    ),
-
-    url("hero-bg.png");
-
-
-    background-size:cover;
-
-    background-position:center;
-
-}
-
-
-
-/* Moving gold light */
-
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:350px;
-
-    height:350px;
-
-    background:#d4af37;
-
-    border-radius:50%;
-
-    filter:blur(140px);
-
-    opacity:.25;
-
-    animation:
-    goldMove 6s infinite alternate;
-
-}
-
-
-
-@keyframes goldMove{
-
-
-from{
-
-transform:translateX(-120px);
-
-}
-
-
-to{
-
-transform:translateX(120px);
-
-}
-
-
-}
-/* =================
-TEXT STYLE
-================= */
-
-
-h1,
-h2,
-h3{
-
-
-background:
-
-linear-gradient(
-
-180deg,
-
-#fff2a8,
-
-#d4af37,
-
-#8a6a1f
-
-);
-
-
--webkit-background-clip:text;
-
-background-clip:text;
-
-color:transparent;
-
-
-text-shadow:
-
-0 0 15px rgba(212,175,55,.45);
-
-
-}
-
-
-
-.hero h1{
-
-
-font-size:48px;
-
-margin-bottom:20px;
-
-animation:
-
-fadeUp 1s ease;
-
-}
-
-
-
-.hero h2{
-
-
-font-size:30px;
-
-margin-bottom:20px;
-
-animation:
-
-fadeUp 1.3s ease;
-
-}
-
-
-
-.hero p{
-
-
-max-width:750px;
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#dddddd;
-
-animation:
-
-fadeUp 1.5s ease;
-
-}
-
-
-
-
-
-/* =================
-BUTTON
-================= */
-
-
-.btn,
-button{
-
-
-display:inline-block;
-
-
-margin:15px;
-
-
-padding:15px 35px;
-
-
-border-radius:50px;
-
-
-text-decoration:none;
-
-
-font-weight:bold;
-
-
-color:#000;
-
-
-background:
-
-linear-gradient(
-
-90deg,
-
-#8a6a1f,
-
-#d4af37,
-
-#fff2a8,
-
-#d4af37
-
-);
-
-
-box-shadow:
-
-0 0 20px rgba(212,175,55,.5);
-
-
-transition:.4s ease;
-
-
-}
-
-
-
-.btn:hover,
-button:hover{
-
-
-transform:
-
-translateY(-8px);
-
-
-box-shadow:
-
-0 0 45px rgba(212,175,55,.9);
-
-
-}
-
-
-
-
-
-/* =================
-SECTIONS
-================= */
-
-
-section{
-
-
-padding:70px 20px;
-
-text-align:center;
-
-
-}
-
-
-
-section p{
-
-
-max-width:850px;
-
-margin:20px auto;
-
-
-color:#dddddd;
-
-
-font-size:17px;
-
-
-line-height:1.8;
-
-
-}
-
-
-
-/* =================
-CARDS
-================= */
-
-
-.cards{
-
-
-display:grid;
-
-
-grid-template-columns:
-
-repeat(auto-fit,minmax(250px,1fr));
-
-
-gap:25px;
-
-
-max-width:1100px;
-
-
-margin:40px auto;
-
-
-}
-
-
-
-
-.card{
-
-
-background:
-
-rgba(15,15,15,.85);
-
-
-border:
-
-1px solid rgba(212,175,55,.5);
-
-
-border-radius:20px;
-
-
-padding:30px;
-
-
-transition:.5s ease;
-
-
-box-shadow:
-
-0 0 20px rgba(212,175,55,.1);
-
-
-}
-
-
-
-.card:hover{
-
-
-transform:
-
-translateY(-12px);
-
-
-border-color:#d4af37;
-
-
-box-shadow:
-
-0 0 40px rgba(212,175,55,.45);
-
-
-}
-
-
-
-
-
-/* =================
-FLOATING EFFECT
-================= */
-
-
-.float{
-
-
-animation:
-
-floating 4s ease-in-out infinite;
-
-
-}
-
-
-
-@keyframes floating{
-
-
-0%{
-
-transform:translateY(0);
-
-}
-
-
-50%{
-
-transform:translateY(-15px);
-
-}
-
-
-100%{
-
-transform:translateY(0);
-
-}
-
-
-}
-/* =================
-ANIMATION
-================= */
-
-
-@keyframes fadeUp{
-
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-
-}
-
-
-
-
-
-/* Scroll reveal */
-
-
-.reveal{
-
-
-opacity:0;
-
-
-transform:translateY(50px);
-
-
-transition:
-
-1s ease;
-
-
-}
-
-
-
-.reveal.show{
-
-
-opacity:1;
-
-
-transform:translateY(0);
-
-
-}
-
-
-
-
-
-/* Gold shine animation */
-
-
-.gold-shine{
-
-
-background:
-
-linear-gradient(
-
-90deg,
-
-#8a6a1f,
-
-#fff2a8,
-
-#d4af37,
-
-#fff2a8
-
-);
-
-
-background-size:200%;
-
-
--webkit-background-clip:text;
-
-
-color:transparent;
-
-
-animation:
-
-shine 4s infinite;
-
-
-}
-
-
-
-@keyframes shine{
-
-
-from{
-
-background-position:0%;
-
-}
-
-
-to{
-
-background-position:200%;
-
-}
-
-
-}
-
-
-
-
-
-/* =================
-FOOTER
-================= */
-
-
-footer{
-
-
-padding:40px 20px;
-
-
-text-align:center;
-
-
-border-top:
-
-1px solid rgba(212,175,55,.2);
-
-
-color:#999;
-
-
-}
-
-
-
-
-
-/* =================
-DESKTOP MENU
-================= */
-
-
-@media(min-width:768px){
-
-
-.menu-toggle{
-
-
-display:none;
-
-
-}
-
-
-
-#nav-menu{
-
-
-display:flex;
-
-
-position:static;
-
-
-width:auto;
-
-
-padding:0;
-
-
-background:none;
-
-
-gap:25px;
-
-
-}
-
-
-
-#nav-menu a{
-
-
-padding:0;
-
-
-font-size:16px;
-
-
-}
-
-
-
-}
-
-
-
-
-
-/* =================
-MOBILE
-================= */
-
-
-@media(max-width:767px){
-
+/* =========================
+   HEADER
+========================= */
 
 
 .header{
 
-
-padding:
-
-12px 20px;
-
-
-}
-
-
-
-.header-logo img{
-
-
-width:65px;
-
-height:65px;
-
-
-}
-
-
-
-.hero{
-
-
-min-height:85vh;
-
-
-}
-
-
-
-.hero h1{
-
-
-font-size:34px;
-
-
-}
-
-
-
-.hero h2{
-
-
-font-size:24px;
-
-
-}
-
-
-
-.hero p{
-
-
-font-size:16px;
-
-
-}
-
-
-
-section{
-
-
-padding:
-
-50px 15px;
-
-
-}
-
-
-
-.cards{
-
-
-grid-template-columns:
-
-1fr;
-
-
-}
-
-
-
-.card{
-
-
-padding:25px 20px;
-
-
-}
-
-
-
-.btn,
-button{
-
-
-padding:
-
-13px 28px;
-
-
-}
-
-
-
-}
-
-
-
-
-/* =================
-BACKGROUND PARTICLE
-================= */
-
-
-body::before{
-
-
-content:"";
-
-
-position:fixed;
-
-
 width:100%;
-
-
-height:100%;
-
-
-top:0;
-
-
-left:0;
-
-
-background-image:
-
-
-radial-gradient(
-
-circle,
-
-rgba(212,175,55,.15) 1px,
-
-transparent 1px
-
-);
-
-
-background-size:
-
-50px 50px;
-
-
-animation:
-
-particleMove 20s linear infinite;
-
-
-pointer-events:none;
-
-
-z-index:-1;
-
-
-}
-
-
-
-
-@keyframes particleMove{
-
-
-from{
-
-
-background-position:
-
-0 0;
-
-
-}
-
-
-
-to{
-
-
-background-position:
-
-500px 500px;
-
-
-}
-
-
-}
-.brand{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-
-.brand img{
-
-width:85px;
-
-height:85px;
-
-object-fit:contain;
-
-filter:
-drop-shadow(0 0 20px rgba(212,175,55,.8));
-
-}
-
-
-.brand-text h3{
-
-font-size:22px;
-
-margin:0;
-
-color:#d4af37;
-
-}
-
-
-.brand-text p{
-
-font-size:10px;
-
-margin:5px 0 0;
-
-color:#c9c9c9;
-
-letter-spacing:1px;
-
-}
-
-..header{
-
-position:relative;
 
 display:flex;
 
 align-items:center;
 
 justify-content:space-between;
-
-}
-
-}
-
-
-.menu-toggle{
-
-position:absolute;
-
-right:30px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-font-size:35px;
-
-color:#d4af37;
-
-cursor:pointer;
-
-z-index:10;
-
-}
-.header{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-width:100%;
 
 padding:20px 30px;
 
 background:#050505;
 
-box-sizing:border-box;
+border-bottom:1px solid rgba(212,175,55,.25);
 
 position:relative;
 
+z-index:100;
+
 }
 
+
+
+/* BRAND */
 
 .brand{
 
@@ -1115,10 +62,13 @@ display:flex;
 
 align-items:center;
 
-gap:15px;
+gap:18px;
 
 }
 
+
+
+/* LOGO */
 
 .logo{
 
@@ -1128,31 +78,46 @@ height:100px;
 
 object-fit:contain;
 
-border-radius:50%;
+background:transparent;
+
+filter:none;
 
 }
 
 
+
+/* BRAND TEXT */
+
 .brand-text h3{
 
-margin:0;
+font-size:30px;
 
 color:#d4af37;
 
-font-size:28px;
+letter-spacing:1px;
+
+font-weight:800;
 
 }
 
 
 .brand-text p{
 
-margin:5px 0 0;
+font-size:13px;
 
 color:#ddd;
 
-font-size:13px;
+letter-spacing:2px;
+
+margin-top:8px;
 
 }
+
+
+
+/* =========================
+   HAMBURGER
+========================= */
 
 
 .menu-toggle{
@@ -1162,5 +127,282 @@ font-size:40px;
 color:#d4af37;
 
 cursor:pointer;
+
+z-index:999;
+
+}
+
+
+
+/* =========================
+   MENU
+========================= */
+
+
+#nav-menu{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+
+right:20px;
+
+background:#080808;
+
+padding:25px;
+
+border:1px solid rgba(212,175,55,.4);
+
+border-radius:15px;
+
+}
+
+
+#nav-menu.active{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+#nav-menu a{
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero{
+
+min-height:100vh;
+
+padding:80px 25px;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.7)
+),
+
+url("hero-bg.png");
+
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:60px;
+
+color:#d4af37;
+
+text-shadow:
+
+0 0 20px rgba(212,175,55,.6);
+
+margin-bottom:20px;
+
+}
+
+
+.hero h2{
+
+font-size:40px;
+
+color:#d4af37;
+
+margin-bottom:35px;
+
+}
+
+
+
+.hero p{
+
+font-size:24px;
+
+line-height:1.8;
+
+max-width:900px;
+
+margin:auto;
+
+color:#eee;
+
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:20px 70px;
+
+border-radius:50px;
+
+background:
+
+linear-gradient(
+90deg,
+#b8860b,
+#ffe88a
+);
+
+
+color:#111;
+
+font-size:22px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+box-shadow:
+
+0 0 25px rgba(212,175,55,.5);
+
+transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+/* =========================
+   SECTION CARD
+========================= */
+
+
+section{
+
+padding:70px 25px;
+
+}
+
+
+
+h2{
+
+color:#d4af37;
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+.header{
+
+padding:15px 20px;
+
+}
+
+
+.logo{
+
+width:85px;
+
+height:85px;
+
+}
+
+
+.brand-text h3{
+
+font-size:22px;
+
+}
+
+
+.brand-text p{
+
+font-size:10px;
+
+}
+
+
+.hero{
+
+padding-top:60px;
+
+}
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
+
+.menu-toggle{
+
+font-size:35px;
+
+}
+
 
 }
