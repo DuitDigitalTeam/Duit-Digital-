@@ -1,4 +1,7 @@
-/* DUIT DIGITAL GOLD THEME */
+/* =================================
+   DUIT DIGITAL LUXURY GOLD THEME
+================================= */
+
 
 *{
     margin:0;
@@ -6,259 +9,338 @@
     box-sizing:border-box;
 }
 
+
 body{
-    background:#050505;
+
+    background:#030303;
     color:#ffffff;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
+
+
+/* HEADER */
 
 header{
+
     text-align:center;
-    padding:20px;
+    padding:25px 15px;
+
 }
+
 
 .logo img{
-    width:140px;
-    filter:drop-shadow(0 0 18px rgba(212,175,55,0.6));
+
+    width:150px;
+
+    filter:
+    drop-shadow(0 0 15px rgba(212,175,55,.7));
+
 }
+
+
+/* NAVIGATION */
 
 nav{
-    margin-top:20px;
+
+    margin-top:25px;
+
 }
+
 
 nav a{
+
     color:#d4af37;
     text-decoration:none;
-    margin:0 10px;
     font-weight:bold;
+    margin:8px;
+
 }
 
+
+nav a:hover{
+
+    color:#fff2a8;
+
+}
+
+
+
+/* SECTION */
 
 section{
-    padding:50px 20px;
+
+    padding:60px 20px;
     text-align:center;
+
 }
 
 
-h1,h2,h3{
+/* GOLD TITLE */
+
+h1,
+h2,
+h3{
 
     background:
     linear-gradient(
     180deg,
-    #fff2a8,
+    #fff5b8,
     #d4af37,
     #8a6a1f
     );
 
     -webkit-background-clip:text;
+    background-clip:text;
+
     color:transparent;
 
     text-shadow:
-    0 3px 10px rgba(212,175,55,0.35);
+    0 5px 20px rgba(212,175,55,.25);
 
 }
 
+
+/* HERO */
+
 .hero{
-    padding:60px 20px;
+
+    min-height:600px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
     background:
     linear-gradient(
-    rgba(0,0,0,.7),
-    rgba(0,0,0,.9)
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.95)
     );
+
 }
 
 
 .hero h1{
-    font-size:42px;
-    margin-bottom:20px;
-}
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:30px;
+
+    font-size:45px;
+    margin-bottom:25px;
+
 }
 
 
-.card{
-    background:#111111;
-    border:1px solid #8a6a1f;
-    border-radius:20px;
-    padding:30px 25px;
-    box-shadow:
-    0 0 20px rgba(255,215,0,0.15);
+.hero p{
+
+    max-width:800px;
+
 }
 
 
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:
-    0 0 30px rgba(255,215,0,0.35);
-}
 
+/* TEXT */
 
-section p{
+p{
+
     color:#dddddd;
     font-size:18px;
     line-height:1.8;
-    margin-bottom:20px;
+
 }
 
 
-button,
-.btn{
+
+/* BUTTON */
+
+.btn,
+button{
+
     display:inline-block;
+
+    margin-top:25px;
+
+    padding:15px 40px;
+
+    border-radius:40px;
+
+    color:#000;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+
     background:
+
+    linear-gradient(
+    90deg,
+    #8a6a1f,
+    #d4af37,
+    #fff2a8,
+    #d4af37
+    );
+
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.5);
+
+}
+
+
+.btn:hover,
+button:hover{
+
+    box-shadow:
+
+    0 0 40px rgba(212,175,55,.9);
+
+}
+
+
+
+/* CARDS */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+
+
+.card{
+
+    background:#0b0b0b;
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+    border-radius:20px;
+
+    padding:30px;
+
+
+    box-shadow:
+
+    0 0 25px rgba(212,175,55,.15);
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 0 35px rgba(212,175,55,.4);
+
+}
+
+
+
+/* GOLD SHINE */
+
+.gold-shine{
+
+background:
+
 linear-gradient(
 90deg,
 #8a6a1f,
-#d4af37,
 #fff2a8,
 #d4af37
 );
 
-    color:#000;
-    padding:15px 35px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    margin:15px;
+background-size:200%;
 
-    box-shadow:
-    0 0 20px rgba(255,215,0,.5);
-}
+-webkit-background-clip:text;
 
+color:transparent;
 
-button:hover,
-.btn:hover{
-    box-shadow:
-    0 0 35px rgba(255,215,0,.9);
-}
-
-
-footer{
-    text-align:center;
-    padding:40px 20px;
-    color:#aaa;
-    border-top:1px solid #333;
-}
-
-
-.gold{
-    color:#ffd700;
-}
-
-
-.highlight{
-    color:#ffd700;
-    font-weight:bold;
-}
-/* MOBILE RESPONSIVE */
-
-@media(max-width:700px){
-
-    .logo img{
-        width:110px;
-    }
-
-
-    nav a{
-        display:inline-block;
-        margin:8px;
-        font-size:14px;
-    }
-
-
-    .hero{
-        padding:40px 15px;
-    }
-
-
-    .hero h1{
-        font-size:32px;
-    }
-
-
-    h2{
-        font-size:30px;
-    }
-
-
-    section{
-        padding:40px 15px;
-    }
-
-
-    section p{
-        font-size:16px;
-    }
-
-
-    .cards{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-
-    .card{
-        padding:25px 15px;
-    }
-
-
-    .btn{
-        padding:12px 25px;
-        font-size:15px;
-    }
-
-}
-
-
-/* GOLD SHINE EFFECT */
-
-.gold-shine{
-
-    background:
-    linear-gradient(
-    90deg,
-    #ffd700,
-    #fff3a0,
-    #ffd700
-    );
-
-    background-size:200%;
-
-    -webkit-background-clip:text;
-    color:transparent;
-
-    animation:shine 3s infinite;
+animation:shine 4s infinite;
 
 }
 
 
 @keyframes shine{
 
-    0%{
-        background-position:0%;
-    }
+0%{
 
+background-position:0%;
 
-    100%{
-        background-position:200%;
-    }
+}
+
+100%{
+
+background-position:200%;
+
+}
 
 }
 
 
-/* SMOOTH ANIMATION */
 
-.card,
-.btn{
+/* FOOTER */
 
-    transition:0.3s ease;
+
+footer{
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    border-top:1px solid #333;
+
+    color:#999;
 
 }
 
 
-html{
-    scroll-behavior:smooth;
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+section{
+
+    padding:40px 15px;
+
+}
+
+
+p{
+
+    font-size:16px;
+
+}
+
+
+.logo img{
+
+    width:120px;
+
+}
+
+
 }
