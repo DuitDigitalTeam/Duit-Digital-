@@ -1,36 +1,75 @@
-document.addEventListener("DOMContentLoaded", function(){
-
-    console.log("DUIT Digital Loaded");
-
-
-    // Scroll reveal animation
-
-    const elements = document.querySelectorAll(".card, section");
+/* =================================
+   DUIT DIGITAL PREMIUM SCRIPT
+================================= */
 
 
-    function reveal(){
+/* WEBSITE LOAD */
 
-        elements.forEach(function(el){
-
-            const position = el.getBoundingClientRect().top;
-
-            const screen = window.innerHeight;
+document.addEventListener(
+"DOMContentLoaded",
+function(){
 
 
-            if(position < screen - 100){
-
-                el.classList.add("show");
-
-            }
-
-        });
-
-    }
+console.log(
+"DUIT Digital Loaded"
+);
 
 
-    window.addEventListener("scroll", reveal);
 
-    reveal();
+/* SCROLL REVEAL */
+
+
+const revealElements = 
+document.querySelectorAll(
+".card, section"
+);
+
+
+
+function revealOnScroll(){
+
+
+revealElements.forEach(
+function(element){
+
+
+const position =
+element.getBoundingClientRect().top;
+
+
+const screen =
+window.innerHeight;
+
+
+
+if(position < screen - 100){
+
+
+element.classList.add(
+"show"
+);
+
+
+}
+
+
+
+});
+
+
+}
+
+
+
+window.addEventListener(
+"scroll",
+revealOnScroll
+);
+
+
+
+revealOnScroll();
+
 
 
 });
@@ -39,20 +78,31 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-// Hamburger Menu
+/* =================================
+   HAMBURGER MENU
+================================= */
+
 
 function toggleMenu(){
 
 
-    const menu =
-    document.getElementById("nav-menu");
+const menu =
+document.getElementById(
+"nav-menu"
+);
 
 
-    if(menu){
 
-        menu.classList.toggle("active");
+if(menu){
 
-    }
+
+menu.classList.toggle(
+"active"
+);
+
+
+}
+
 
 
 }
