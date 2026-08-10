@@ -1,28 +1,27 @@
 /* =========================
-   DUIT DIGITAL PREMIUM STYLE
+   DUIT DIGITAL WEBSITE CSS
 ========================= */
 
 
 /* RESET */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 body{
 
-font-family:Arial, Helvetica, sans-serif;
+    background:#050505;
 
-background:#050505;
+    color:white;
 
-color:white;
-
-overflow-x:hidden;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
+
 
 
 /* =========================
@@ -32,37 +31,36 @@ overflow-x:hidden;
 
 .header{
 
-width:100%;
+    width:100%;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-padding:20px 30px;
+    padding:20px 30px;
 
-background:#050505;
+    background:#050505;
 
-border-bottom:1px solid rgba(212,175,55,.25);
-
-position:relative;
-
-z-index:100;
+    border-bottom:1px solid rgba(212,175,55,0.3);
 
 }
 
 
 
-/* BRAND */
+/* =========================
+   BRAND
+========================= */
+
 
 .brand{
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-gap:18px;
+    gap:18px;
 
 }
 
@@ -70,46 +68,65 @@ gap:18px;
 
 /* LOGO */
 
-.logo{
+.header-logo{
 
-width:100px;
+    width:100px;
 
-height:100px;
+    height:100px;
 
-object-fit:contain;
+    display:flex;
 
-background:transparent;
+    align-items:center;
 
-filter:none;
+    justify-content:center;
+
+}
+
+
+.header-logo img{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    border-radius:0;
+
+    background:none;
+
+    filter:none;
+
+    box-shadow:none;
 
 }
 
 
 
-/* BRAND TEXT */
+/* TEXT */
 
 .brand-text h3{
 
-font-size:30px;
+    font-size:30px;
 
-color:#d4af37;
+    color:#d4af37;
 
-letter-spacing:1px;
+    font-weight:800;
 
-font-weight:800;
+    letter-spacing:1px;
 
 }
 
 
 .brand-text p{
 
-font-size:13px;
+    margin-top:8px;
 
-color:#ddd;
+    color:#ddd;
 
-letter-spacing:2px;
+    font-size:13px;
 
-margin-top:8px;
+    letter-spacing:2px;
 
 }
 
@@ -122,62 +139,66 @@ margin-top:8px;
 
 .menu-toggle{
 
-font-size:40px;
+    font-size:40px;
 
-color:#d4af37;
+    color:#d4af37;
 
-cursor:pointer;
+    cursor:pointer;
 
-z-index:999;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
 }
 
 
 
 /* =========================
-   MENU
+   NAV MENU
 ========================= */
 
 
 #nav-menu{
 
-display:none;
+    display:none;
 
-position:absolute;
+    position:absolute;
 
-top:100%;
+    right:30px;
 
-right:20px;
+    top:100px;
 
-background:#080808;
+    background:#080808;
 
-padding:25px;
+    border:1px solid #d4af37;
 
-border:1px solid rgba(212,175,55,.4);
+    padding:25px;
 
-border-radius:15px;
+    border-radius:15px;
 
 }
 
 
 #nav-menu.active{
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:20px;
+    gap:20px;
 
 }
 
 
 #nav-menu a{
 
-color:#d4af37;
+    color:#d4af37;
 
-text-decoration:none;
+    text-decoration:none;
 
-font-size:18px;
+    font-size:18px;
 
 }
 
@@ -190,25 +211,25 @@ font-size:18px;
 
 .hero{
 
-min-height:100vh;
+    min-height:100vh;
 
-padding:80px 25px;
+    padding:80px 25px;
 
-text-align:center;
+    text-align:center;
 
-background:
+    background:
 
-linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.7)
-),
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.75)
+    ),
 
-url("hero-bg.png");
+    url("hero-bg.png");
 
 
-background-size:cover;
+    background-size:cover;
 
-background-position:center;
+    background-position:center;
 
 }
 
@@ -216,26 +237,27 @@ background-position:center;
 
 .hero h1{
 
-font-size:60px;
+    font-size:60px;
 
-color:#d4af37;
+    color:#d4af37;
 
-text-shadow:
+    text-shadow:
 
-0 0 20px rgba(212,175,55,.6);
+    0 0 25px rgba(212,175,55,.6);
 
-margin-bottom:20px;
+    margin-bottom:20px;
 
 }
 
 
+
 .hero h2{
 
-font-size:40px;
+    font-size:40px;
 
-color:#d4af37;
+    color:#d4af37;
 
-margin-bottom:35px;
+    margin-bottom:35px;
 
 }
 
@@ -243,15 +265,15 @@ margin-bottom:35px;
 
 .hero p{
 
-font-size:24px;
+    max-width:900px;
 
-line-height:1.8;
+    margin:auto;
 
-max-width:900px;
+    font-size:24px;
 
-margin:auto;
+    line-height:1.8;
 
-color:#eee;
+    color:#eee;
 
 }
 
@@ -264,69 +286,35 @@ color:#eee;
 
 .btn{
 
-display:inline-block;
+    display:inline-block;
 
-margin-top:40px;
+    margin-top:40px;
 
-padding:20px 70px;
+    padding:20px 70px;
 
-border-radius:50px;
-
-background:
-
-linear-gradient(
-90deg,
-#b8860b,
-#ffe88a
-);
+    border-radius:50px;
 
 
-color:#111;
+    background:
 
-font-size:22px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-box-shadow:
-
-0 0 25px rgba(212,175,55,.5);
-
-transition:.3s;
-
-}
+    linear-gradient(
+    90deg,
+    #b8860b,
+    #ffe88a
+    );
 
 
+    color:#111;
 
-.btn:hover{
+    font-size:22px;
 
-transform:translateY(-5px);
+    font-weight:bold;
 
-}
+    text-decoration:none;
 
+    box-shadow:
 
-
-/* =========================
-   SECTION CARD
-========================= */
-
-
-section{
-
-padding:70px 25px;
-
-}
-
-
-
-h2{
-
-color:#d4af37;
-
-text-align:center;
-
-margin-bottom:40px;
+    0 0 25px rgba(212,175,55,.5);
 
 }
 
@@ -342,65 +330,59 @@ margin-bottom:40px;
 
 .header{
 
-padding:15px 20px;
+    padding:15px 20px;
 
 }
 
 
-.logo{
+.header-logo,
+.header-logo img{
 
-width:85px;
+    width:85px;
 
-height:85px;
+    height:85px;
 
 }
 
 
 .brand-text h3{
 
-font-size:22px;
+    font-size:22px;
 
 }
 
 
 .brand-text p{
 
-font-size:10px;
-
-}
-
-
-.hero{
-
-padding-top:60px;
-
-}
-
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-
-.hero h2{
-
-font-size:30px;
-
-}
-
-
-.hero p{
-
-font-size:18px;
+    font-size:10px;
 
 }
 
 
 .menu-toggle{
 
-font-size:35px;
+    font-size:35px;
+
+}
+
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+
+.hero h2{
+
+    font-size:30px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
 
 }
 
