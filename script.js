@@ -80,6 +80,28 @@ card.style.transform="translateY(0)";
 
 });
 
+const revealElements =
+document.querySelectorAll("section");
+
+
+window.addEventListener("scroll",()=>{
+
+
+revealElements.forEach((el)=>{
+
+
+let position =
+el.getBoundingClientRect().top;
+
+
+if(position < window.innerHeight - 100){
+
+
+el.classList.add("show");
+
+
+}
+
 
 });
 
