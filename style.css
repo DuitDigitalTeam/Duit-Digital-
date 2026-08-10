@@ -40,48 +40,24 @@ HEADER
 ================= */
 
 
-.header{
+.header-logo{
 
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 30px;
-
-background:#050505;
-
-border-bottom:
-
-1px solid rgba(212,175,55,.25);
+width:110px;
+height:110px;
+border-radius:50%;
+overflow:hidden;
+box-shadow:0 0 30px rgba(212,175,55,.7);
 
 }
-
-}
-
 
 
 .header-logo img{
 
-width:100px;
-
-height:100px;
-
+width:110px;
+height:110px;
 object-fit:cover;
-
-border-radius:18px;
-
-padding:5px;
-
-background:#050505;
-
-border:1px solid rgba(212,175,55,.5);
-
-
-box-shadow:
-
-0 0 20px rgba(212,175,55,.6);
+border-radius:50%;
+filter:drop-shadow(0 0 25px rgba(212,175,55,.8));
 
 
 }
