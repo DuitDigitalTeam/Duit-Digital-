@@ -337,5 +337,17 @@ p{
 
 }
 
+section {
+padding-top:60px;
+padding-bottom:60px;
+}
 
+section h2 {
+margin-bottom:20px;
+}
+
+.card {
+margin:15px auto;
+padding:25px;
+}
 }
