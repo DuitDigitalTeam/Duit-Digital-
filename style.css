@@ -350,4 +350,30 @@ margin-bottom:20px;
 margin:15px auto;
 padding:25px;
 }
+.menu-toggle{
+    display:block;
+    font-size:40px;
+    color:#d4af37;
+    cursor:pointer;
+    text-align:center;
+}
+
+
+#nav-menu{
+    display:none;
+    flex-direction:column;
+    text-align:center;
+}
+
+
+#nav-menu.active{
+    display:flex;
+}
+
+
+#nav-menu a{
+    color:#d4af37;
+    text-decoration:none;
+    padding:15px;
+    font-size:20px;
 }
