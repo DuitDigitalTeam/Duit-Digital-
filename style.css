@@ -1010,3 +1010,50 @@ background-position:
 
 
 }
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+.brand img{
+
+width:85px;
+
+height:85px;
+
+object-fit:contain;
+
+filter:
+drop-shadow(0 0 20px rgba(212,175,55,.8));
+
+}
+
+
+.brand-text h3{
+
+font-size:22px;
+
+margin:0;
+
+color:#d4af37;
+
+}
+
+
+.brand-text p{
+
+font-size:10px;
+
+margin:5px 0 0;
+
+color:#c9c9c9;
+
+letter-spacing:1px;
+
+}
