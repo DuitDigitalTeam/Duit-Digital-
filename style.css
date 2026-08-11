@@ -542,3 +542,159 @@ font-size:18px;
 display:block !important;
 
 }
+/* =========================
+   ECOSYSTEM SECTION
+========================= */
+
+
+.ecosystem{
+
+padding:90px 20px;
+
+background:#050505;
+
+text-align:center;
+
+}
+
+
+.ecosystem h2{
+
+font-size:45px;
+
+color:#d4af37;
+
+margin-bottom:20px;
+
+}
+
+
+
+.eco-desc{
+
+color:#ddd;
+
+font-size:20px;
+
+max-width:700px;
+
+margin:0 auto 50px;
+
+line-height:1.6;
+
+}
+
+
+
+.eco-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+
+
+.eco-card{
+
+background:
+
+rgba(255,255,255,.05);
+
+border:1px solid rgba(212,175,55,.5);
+
+border-radius:20px;
+
+padding:35px 25px;
+
+backdrop-filter:blur(10px);
+
+transition:.4s;
+
+}
+
+
+
+.eco-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:
+
+0 0 35px rgba(212,175,55,.5);
+
+}
+
+
+
+.eco-icon{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.eco-card h3{
+
+color:#d4af37;
+
+font-size:25px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.eco-card p{
+
+color:#ddd;
+
+line-height:1.6;
+
+font-size:16px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.ecosystem h2{
+
+font-size:32px;
+
+}
+
+
+
+.eco-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.eco-card{
+
+padding:30px 20px;
+
+}
+
+
+}
