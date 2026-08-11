@@ -1048,3 +1048,96 @@ font-size:32px;
 }
 
 }
+/* HOW DUIT MOBILE FIX */
+
+.how-duit{
+padding:70px 20px;
+background:#000;
+}
+
+
+.how-duit h2{
+color:#d4af37;
+font-size:38px;
+text-align:center;
+margin-bottom:15px;
+}
+
+
+.how-desc{
+color:#ddd;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+}
+
+
+.how-container{
+display:flex;
+flex-direction:column;
+gap:25px;
+margin-top:40px;
+}
+
+
+.how-card{
+
+background:#0b0b0b;
+
+border:1px solid rgba(212,175,55,0.5);
+
+border-radius:25px;
+
+padding:30px 25px;
+
+text-align:center;
+
+}
+
+
+.how-number{
+
+width:65px;
+height:65px;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:#d4af37;
+
+color:#000;
+
+font-size:25px;
+
+font-weight:bold;
+
+}
+
+
+.how-card h3{
+
+color:#d4af37;
+
+font-size:28px;
+
+margin:20px 0 10px;
+
+}
+
+
+.how-card p{
+
+color:#eee;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
