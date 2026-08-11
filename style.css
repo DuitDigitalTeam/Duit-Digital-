@@ -1473,23 +1473,21 @@ font-size:15px;
 
 }
 .why-section{
-    padding-top:40px !important;
-    padding-bottom:40px !important;
-    margin-top:0 !important;
+    padding:20px !important;
+    margin:0 !important;
+    min-height:0 !important;
 }
 
 .why-section h2{
-    font-size:42px !important;
-    line-height:1.2 !important;
-    margin-bottom:20px !important;
+    margin-top:0 !important;
+    margin-bottom:15px !important;
 }
 
 .why-section p{
-    font-size:22px !important;
-    line-height:1.6 !important;
     margin:0 !important;
 }
 
 .tokenomics{
-    margin-top:30px !important;
+    padding-top:20px !important;
+    margin-top:0 !important;
 }
