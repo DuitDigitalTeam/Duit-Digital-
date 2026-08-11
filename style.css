@@ -1429,3 +1429,48 @@ border-top:1px solid rgba(212,175,55,.3);
 color:#aaa;
 
 }
+/* COMMUNITY BUTTON FIX */
+
+.social-btn{
+
+display:inline-block;
+
+background:#d4af37;
+
+color:#000 !important;
+
+padding:14px 30px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+margin:10px;
+
+}
+
+
+.social-btn:hover{
+
+background:#f5d76e;
+
+}
+footer{
+
+margin-top:50px;
+
+padding:30px 20px;
+
+text-align:center;
+
+background:#000;
+
+border-top:1px solid rgba(212,175,55,.3);
+
+color:#aaa;
+
+font-size:15px;
+
+}
