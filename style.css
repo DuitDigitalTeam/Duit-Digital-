@@ -780,3 +780,137 @@ max-width:700px;
 margin:auto;
 
 }
+/* TOKENOMICS SECTION */
+
+.tokenomics{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+
+.tokenomics h2{
+
+    color:#d4af37;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.token-subtitle{
+
+    color:#cccccc;
+
+    font-size:20px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.token-total{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(212,175,55,0.5);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.token-total h3{
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+
+
+.supply{
+
+    color:#d4af37;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+}
+
+
+
+.token-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+.token-card{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(212,175,55,0.4);
+
+    border-radius:25px;
+
+    padding:30px 20px;
+
+}
+
+
+
+.token-card h3{
+
+    color:#d4af37;
+
+    font-size:26px;
+
+}
+
+
+
+.token-card span{
+
+    display:block;
+
+    color:white;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+
+
+.token-card p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+}
