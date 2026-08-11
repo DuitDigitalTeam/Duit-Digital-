@@ -867,3 +867,28 @@ line-height:1.7;
 }
 
 }
+@media(max-width:768px){
+
+.hero h1{
+
+margin-bottom:15px !important;
+
+}
+
+
+.hero h2{
+
+margin-top:0 !important;
+
+margin-bottom:25px !important;
+
+}
+
+
+.hero p{
+
+margin-top:10px !important;
+
+}
+
+}
