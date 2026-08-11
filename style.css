@@ -659,3 +659,169 @@ box-shadow:
 0 0 40px rgba(212,175,55,.9);
 
 }
+/* =========================
+   HERO BACKGROUND ANIMATION
+========================= */
+
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+/* Layer cahaya bergerak */
+
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+top:-50%;
+
+left:-50%;
+
+width:200%;
+
+height:200%;
+
+
+background:
+
+radial-gradient(
+circle,
+rgba(212,175,55,.18),
+transparent 35%
+);
+
+
+animation:moveGlow 10s linear infinite;
+
+pointer-events:none;
+
+}
+
+
+
+@keyframes moveGlow{
+
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+
+50%{
+
+transform:translate(5%,5%);
+
+}
+
+
+100%{
+
+transform:translate(0,0);
+
+}
+
+
+}
+
+
+
+/* Pastikan content di atas background */
+
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero .btn{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+/* Floating animation untuk button */
+
+
+.btn{
+
+animation:
+
+floatButton 3s ease-in-out infinite;
+
+}
+
+
+
+@keyframes floatButton{
+
+
+0%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* Background zoom perlahan */
+
+
+.hero{
+
+background-size:110%;
+
+animation:backgroundMove 20s ease-in-out infinite alternate;
+
+}
+
+
+
+@keyframes backgroundMove{
+
+
+from{
+
+background-size:110%;
+
+}
+
+
+to{
+
+background-size:120%;
+
+}
+
+
+}
