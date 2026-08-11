@@ -756,28 +756,20 @@ section{
 }
 
 
-.why-section{
-    padding:50px 25px;
+.why-duit{
+    padding-bottom:40px;
 }
 
-.why-section p{
-    color:#ddd;
-    font-size:20px;
-    line-height:1.8;
+.why-duit + section{
+    margin-top:20px;
 }
-.why-section h2{
-    font-size:32px;
-    white-space:nowrap;
+@media(max-width:600px){
+
+h2{
+    font-size:38px;
+    line-height:1.2;
 }
-.why-section p{
 
-font-size:18px;
-
-line-height:1.5;
-
-max-width:700px;
-
-margin:auto;
 
 }
 /* TOKENOMICS SECTION */
