@@ -758,3 +758,20 @@ transform:translateY(0);
     color:#ddd;
     line-height:1.7;
 }
+.why-section{
+    padding:80px 25px;
+    text-align:center;
+}
+
+
+.why-section h2{
+    color:#d4af37;
+    font-size:38px;
+}
+
+
+.why-section p{
+    color:#ddd;
+    font-size:20px;
+    line-height:1.8;
+}
