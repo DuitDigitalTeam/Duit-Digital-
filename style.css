@@ -756,20 +756,26 @@ section{
 }
 
 
-.why-duit{
-    padding-bottom:40px;
+.why-section{
+    padding-top:40px !important;
+    padding-bottom:40px !important;
+    margin-top:0 !important;
 }
 
-.why-duit + section{
-    margin-top:20px;
-}
-@media(max-width:600px){
-
-h2{
-    font-size:38px;
-    line-height:1.2;
+.why-section h2{
+    font-size:42px !important;
+    line-height:1.2 !important;
+    margin-bottom:20px !important;
 }
 
+.why-section p{
+    margin:0 !important;
+    line-height:1.5 !important;
+}
+
+.why-section + .tokenomics{
+    margin-top:30px !important;
+}
 
 }
 /* TOKENOMICS SECTION */
