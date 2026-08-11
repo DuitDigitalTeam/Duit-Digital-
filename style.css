@@ -493,3 +493,52 @@ display:none;
 }
 
 }
+/* FORCE HIDE NAV MENU */
+
+header #nav-menu,
+#nav-menu{
+
+display:none !important;
+
+position:absolute;
+
+top:90px;
+
+right:20px;
+
+background:#050505;
+
+width:230px;
+
+padding:20px;
+
+border-radius:15px;
+
+border:1px solid #d4af37;
+
+z-index:9999;
+
+}
+
+
+#nav-menu a{
+
+display:block !important;
+
+color:#d4af37 !important;
+
+text-decoration:none !important;
+
+padding:12px 0;
+
+font-size:18px;
+
+}
+
+
+
+#nav-menu.active{
+
+display:block !important;
+
+}
