@@ -1257,3 +1257,89 @@ font-size:17px;
 line-height:1.7;
 
 }
+/* =========================
+   ROADMAP MOBILE STYLE
+========================= */
+
+.roadmap{
+padding:80px 20px;
+background:#000;
+}
+
+
+.roadmap h2{
+color:#d4af37;
+font-size:38px;
+text-align:center;
+margin-bottom:20px;
+}
+
+
+.road-desc{
+color:#ddd;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+}
+
+
+.road-container{
+display:flex;
+flex-direction:column;
+gap:25px;
+margin-top:45px;
+}
+
+
+.road-card{
+
+background:#0b0b0b;
+
+border:1px solid rgba(212,175,55,0.5);
+
+border-radius:25px;
+
+padding:30px 25px;
+
+text-align:center;
+
+}
+
+
+.road-phase{
+
+display:inline-block;
+
+background:#d4af37;
+
+color:#000;
+
+padding:8px 22px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+
+.road-card h3{
+
+color:#d4af37;
+
+font-size:28px;
+
+margin:20px 0 12px;
+
+}
+
+
+.road-card p{
+
+color:#eee;
+
+font-size:17px;
+
+line-height:1.6;
+
+}
