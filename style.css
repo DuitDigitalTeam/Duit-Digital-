@@ -892,3 +892,17 @@ margin-top:10px !important;
 }
 
 }
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px !important;
+
+white-space:nowrap;
+
+letter-spacing:-1px;
+
+}
+
+
+}
