@@ -914,3 +914,137 @@ margin:auto;
     line-height:1.6;
 
 }
+/* =========================
+   HOW DUIT WORKS
+========================= */
+
+
+.how-duit{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+
+
+.how-duit h2{
+
+color:#d4af37;
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.how-desc{
+
+color:#ddd;
+
+font-size:20px;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.7;
+
+}
+
+
+
+.how-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+
+
+.how-card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(212,175,55,.4);
+
+border-radius:25px;
+
+padding:35px 20px;
+
+transition:.4s;
+
+}
+
+
+
+.how-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(212,175,55,.4);
+
+}
+
+
+
+.how-number{
+
+font-size:45px;
+
+font-weight:bold;
+
+color:#d4af37;
+
+}
+
+
+
+.how-card h3{
+
+color:white;
+
+font-size:26px;
+
+margin:20px 0 15px;
+
+}
+
+
+
+.how-card p{
+
+color:#ccc;
+
+line-height:1.6;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.how-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+.how-duit h2{
+
+font-size:32px;
+
+}
+
+}
