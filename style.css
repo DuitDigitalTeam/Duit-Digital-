@@ -765,3 +765,18 @@ section{
     font-size:20px;
     line-height:1.8;
 }
+.why-section h2{
+    font-size:32px;
+    white-space:nowrap;
+}
+.why-section p{
+
+font-size:18px;
+
+line-height:1.5;
+
+max-width:700px;
+
+margin:auto;
+
+}
