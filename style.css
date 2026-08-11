@@ -420,3 +420,76 @@ margin-top:40px;
 
 
 }
+/* =========================
+   NAV MENU
+========================= */
+
+
+#nav-menu{
+
+display:none;
+
+position:absolute;
+
+top:100%;
+
+right:20px;
+
+background:#050505;
+
+padding:25px;
+
+border:1px solid rgba(212,175,55,.5);
+
+border-radius:15px;
+
+z-index:20;
+
+}
+
+
+
+#nav-menu a{
+
+display:block;
+
+color:#d4af37;
+
+text-decoration:none;
+
+font-size:18px;
+
+padding:12px 0;
+
+}
+
+
+
+#nav-menu a:hover{
+
+color:white;
+
+}
+
+
+
+#nav-menu.active{
+
+display:block;
+
+}
+
+
+
+/* desktop hide menu */
+
+
+@media(min-width:769px){
+
+#nav-menu{
+
+display:none;
+
+}
+
+}
