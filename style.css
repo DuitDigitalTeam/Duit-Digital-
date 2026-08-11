@@ -499,3 +499,163 @@ padding:18px 50px;
 }
 
 }
+/* =========================
+   HERO ANIMATION PHASE 1
+========================= */
+
+
+/* Hero masuk perlahan */
+
+.hero h1{
+
+animation: fadeDown 1s ease forwards;
+
+}
+
+
+.hero h2{
+
+animation: fadeUp 1.2s ease forwards;
+
+animation-delay:.2s;
+
+opacity:0;
+
+}
+
+
+.hero p{
+
+animation: fadeUp 1.5s ease forwards;
+
+animation-delay:.4s;
+
+opacity:0;
+
+}
+
+
+.hero .btn{
+
+animation: fadeUp 1.8s ease forwards;
+
+animation-delay:.6s;
+
+opacity:0;
+
+}
+
+
+
+/* Fade animation */
+
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes fadeUp{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Gold glow pada tajuk */
+
+
+.hero h1,
+.hero h2{
+
+animation-name:goldGlow;
+
+animation-duration:3s;
+
+animation-iteration-count:infinite;
+
+animation-direction:alternate;
+
+}
+
+
+
+@keyframes goldGlow{
+
+
+from{
+
+text-shadow:
+
+0 0 10px rgba(212,175,55,.3);
+
+}
+
+
+to{
+
+text-shadow:
+
+0 0 35px rgba(212,175,55,.9);
+
+}
+
+
+}
+
+
+
+/* Button hover */
+
+
+.btn{
+
+transition:.4s;
+
+}
+
+
+.btn:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+
+0 0 40px rgba(212,175,55,.9);
+
+}
