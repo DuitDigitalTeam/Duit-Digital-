@@ -751,17 +751,14 @@ transform:translateY(0);
     color:#ddd;
     line-height:1.7;
 }
+section{
+    padding:60px 20px;
+}
+
+
 .why-section{
-    padding:80px 25px;
-    text-align:center;
+    padding:50px 25px;
 }
-
-
-.why-section h2{
-    color:#d4af37;
-    font-size:38px;
-}
-
 
 .why-section p{
     color:#ddd;
