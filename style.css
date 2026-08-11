@@ -906,3 +906,29 @@ letter-spacing:-1px;
 
 
 }
+@media(max-width:768px){
+
+.hero h1{
+
+margin-bottom:40px !important;
+
+}
+
+
+.hero p{
+
+margin-top:0 !important;
+
+}
+
+
+.hero{
+
+min-height:auto;
+
+padding-bottom:60px;
+
+}
+
+
+}
